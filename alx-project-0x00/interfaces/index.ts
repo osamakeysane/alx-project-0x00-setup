@@ -3,8 +3,8 @@ export interface PillProps {
 }
 
 export interface ButtonProps {
-  title: string; // Text that will appear on the button
-  size?: "small" | "medium" | "large"; // Optional: button size
-  shape?: "rounded-sm" | "rounded-md" | "rounded-lg" | "rounded-full"; // added rounded-lg
-  styles?: string; // Optional: any additional Tailwind CSS classes
+  title: string;
+  size?: "small" | "medium" | "large";
+  shape?: "rounded-sm" | "rounded-md" | "rounded-lg" | "rounded-full"; // include all shapes
+  styles: string; // <-- this line was missing, add it
 }
